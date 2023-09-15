@@ -25,13 +25,13 @@ import java.util.Map;
 public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 
     // inject class
-    @Autowired
+    //@Autowired
     private JwtUtils jwtUtils;
 
     // hacer la inyecccion por constructor
-    /*public JwtAuthenticationFilter(JwtUtils jwtUtils){
+    public JwtAuthenticationFilter(JwtUtils jwtUtils){
         this.jwtUtils = jwtUtils;
-    }*/
+    }
 
     // metodo que se ejecuta cuando un usuario se intenta autenticar
     @Override
